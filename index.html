@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MORE Interiors | 3D Kitchen & Home Interior</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MORE Interiors – Modular Kitchen & Complete Home Interior Solutions in Pakistan">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    perspective: 1200px;
+}
+
+/* HEADER */
+header {
+    background: url("https://images.unsplash.com/photo-1556912167-f556f1f39df3") center/cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-title {
+    font-size: 44px;
+    color: #111;
+    background: rgba(255,255,255,0.9);
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 10px;
+    transform: translateZ(40px);
+}
+
+.sub-title {
+    margin-top: 12px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.75);
+    padding: 8px 20px;
+    border-radius: 6px;
+}
+
+/* NAV */
+nav {
+    background: #ff9800;
+    padding: 14px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    margin: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px;
+    background: white;
+    margin: 25px;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+}
+
+/* 3D CARDS */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+}
+
+.service-box {
+    background: linear-gradient(135deg, #fff, #f1f1f1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
+    transform-style: preserve-3d;
+}
+
+.service-box:hover {
+    transform: rotateY(10deg) rotateX(8deg) translateZ(20px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 18px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.4s;
+}
+.gallery img:hover {
+    transform: scale(1.05) rotateY(6deg);
+}
+
+/* FORM */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+form button {
+    background: #ff9800;
+    color: white;
+    padding: 14px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp img {
+    width: 65px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="main-title">MORE Interiors</h1><br>
+    <p class="sub-title">3D Modular Kitchen & Home Interior Solutions</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        MORE Interiors ek professional interior design company hai jo
+        Modular Kitchen, Bedroom, Living Room aur Complete Home Interior
+        solutions provide karti hai. Hum modern **3D designs** aur
+        high-quality material use karte hain.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">🍽 Modular Kitchen</div>
+        <div class="service-box">🏠 Complete Home Interior</div>
+        <div class="service-box">🛏 Bedroom & Wardrobe</div>
+        <div class="service-box">📺 TV Unit & False Ceiling</div>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="services">
+        <div class="service-box">🍳 Modular Kitchen Cabinets</div>
+        <div class="service-box">🔥 Built-in Appliances</div>
+        <div class="service-box">🚰 Sinks & Faucets</div>
+        <div class="service-box">🛏 Sliding Wardrobes</div>
+        <div class="service-box">📺 TV Units</div>
+        <div class="service-box">🖼 Wall Panels</div>
+        <div class="service-box">☁ False Ceiling</div>
+        <div class="service-box">💡 LED Lighting</div>
+        <div class="service-box">🪑 Custom Furniture</div>
+        <div class="service-box">🏢 Office Interior</div>
+        <div class="service-box">📚 Study Tables</div>
+        <div class="service-box">🚪 CNC Doors</div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Our Projects</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea">
+        <img src="c:\Users\HP\Downloads\photo for wallpapaer.jpg">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="03XX-XXXXXXX" required>
+        <textarea id="message" placeholder="Your Requirement" required></textarea>
+        <button type="submit">Send Inquiry on WhatsApp</button>
+    </form>
+
+    <p><strong>Phone:</strong> 0337-7779993</p>
+    <p><strong>Email:</strong> moreinteriors@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 MORE Interiors | All Rights Reserved</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923377779993" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<script>
+function sendMessage(e){
+    e.preventDefault();
+    let n=document.getElementById("name").value;
+    let p=document.getElementById("phone").value;
+    let m=document.getElementById("message").value;
+
+    let text = 
+    "Name: "+n+"%0A"+
+    "Phone: "+p+"%0A"+
+    "Requirement: "+m;
+
+    window.open("https://wa.me/923377779993?text="+text,"_blank");
+}
+</script>
+
+</body>
+</html>
